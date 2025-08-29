@@ -1,0 +1,92 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-img {
+    background-image: url('Ben10_form_bg.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+
+.alien-form {
+    padding: 16px 24px; 
+    max-width: 320px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+    background: rgba(14, 78, 24, 0.8);
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #00ff5060;
+}
+
+.alien-form input[type="text"] {
+    padding: 6px 10px; 
+    margin: 6px 0 12px 0; 
+    font-size: 0.9em; 
+}
+
+.alien-form label {
+    margin-top: 6px; 
+    font-size: 0.95em;
+}
+
+
+.alien-form h1 {
+    color: #39ff14;
+    margin-bottom: 12px;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+
+.omnitrix-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 16px #39ff14;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 8px auto;
+}
+
+.omnitrix-btn:hover {
+    box-shadow: 0 0 40px #39ff14, 0 0 8px #fff inset;
+}
+
+.splash-hidden {
+    display: none;
+}
+
+.splash-active {
+    position: fixed;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: radial-gradient(circle, #39ff14 0%, #0e4e18 100%);
+    opacity: 0.8;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: splashAnim 1s ease-in;
+}
+
+@keyframes splashAnim {
+    0% { opacity: 0; transform: scale(0.2);}
+    60% { opacity: 0.85; transform: scale(1.2);}
+    100% { opacity: 0.8; transform: scale(1);}
+}
+
+.btn:hover {
+    background: #24d16c;
+}
